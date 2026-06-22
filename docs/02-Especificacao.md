@@ -80,15 +80,18 @@ Para representar melhor os perfis de usuários do Green Estoque, foram definidas
 
 ![Persona 1](images/Persona%201.png)
 
-### Persona 1 — Lucas Ferreira, auxiliar de estoque
-* **Idade:** 24 anos.
-* **Cargo:** Auxiliar de estoque.
+### Persona 1 — Carlos Henrique, diretor / decisor
+* **Idade:** 42 anos.
+* **Cargo:** Diretor / gestor estratégico.
 * **Nível de afinidade com tecnologia:** Intermediário.
-* **Objetivo:** Localizar rapidamente produtos e registrar movimentações sem depender de anotações manuais.
-* **Dores:** Perde tempo procurando materiais, precisa fazer contagens repetidas e às vezes encontra divergências entre o item físico e o registro informal.
-* **Necessidades:** Sistema simples, rápido, com busca eficiente e interface objetiva.
+* **Objetivo:** Garantir que a empresa trabalhe com mais eficiência e menos desperdício.
+* **Dores:** Impactos da desorganização no atendimento, no tempo de resposta e na confiabilidade das informações.
+* **Necessidades:** Visão executiva do sistema, dados resumidos e apoio à tomada de decisão.
+
+
 
 ![Persona 2](images/Persona%202.png)
+
 ### Persona 2 — Mariana Souza, gestora operacional
 * **Idade:** 35 anos.
 * **Cargo:** Gestora operacional / responsável pelo estoque.
@@ -99,13 +102,13 @@ Para representar melhor os perfis de usuários do Green Estoque, foram definidas
 
 ![Persona 3](images/Persona%203.png)
 
-### Persona 3 — Carlos Henrique, diretor / decisor
-* **Idade:** 42 anos.
-* **Cargo:** Diretor / gestor estratégico.
+### Persona 3 — Lucas Ferreira, auxiliar de estoque
+* **Idade:** 24 anos.
+* **Cargo:** Auxiliar de estoque.
 * **Nível de afinidade com tecnologia:** Intermediário.
-* **Objetivo:** Garantir que a empresa trabalhe com mais eficiência e menos desperdício.
-* **Dores:** Impactos da desorganização no atendimento, no tempo de resposta e na confiabilidade das informações.
-* **Necessidades:** Visão executiva do sistema, dados resumidos e apoio à tomada de decisão.
+* **Objetivo:** Localizar rapidamente produtos e registrar movimentações sem depender de anotações manuais.
+* **Dores:** Perde tempo procurando materiais, precisa fazer contagens repetidas e às vezes encontra divergências entre o item físico e o registro informal.
+* **Necessidades:** Sistema simples, rápido, com busca eficiente e interface objetiva.
 
 ---
 
