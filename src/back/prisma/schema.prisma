@@ -1,0 +1,145 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum MovimentacaoTipo {
+  ENTRADA
+  SAIDA
+  RETORNO
+  AJUSTE
+}
+
+enum NotificacaoTipo {
+  ESTOQUE_BAIXO
+  SEM_ESTOQUE
+  PEDIDO_ENTREGUE
+  AVISO_SISTEMA
+}
+
+model Perfil {
+  id       Int       @id @default(autoincrement())
+  nome     String    @unique @db.VarChar(50)
+
+  usuarios Usuario[]
+
+  @@map("perfis")
+}
+
+model Categoria {
+  id        Int       @id @default(autoincrement())
+  nome      String    @unique @db.VarChar(100)
+  descricao String?   @db.Text
+
+  produtos  Produto[]
+
+  @@map("categorias")
+}
+
+model Fornecedor {
+  id        Int      @id @default(autoincrement())
+  nome      String   @db.VarChar(150)
+  cnpj      String?  @unique @db.VarChar(20)
+  contato   String?  @db.VarChar(100)
+  email     String?  @db.VarChar(100)
+  telefone  String?  @db.VarChar(20)
+  criadoEm  DateTime @default(now()) @map("criado_em")
+
+  produtos      ProdutoFornecedor[]
+  movimentacoes Movimentacao[]
+
+  @@map("fornecedores")
+}
+
+model Usuario {
+  id        Int      @id @default(autoincrement())
+  perfilId  Int      @map("perfil_id")
+  nome      String   @db.VarChar(150)
+  email     String   @unique @db.VarChar(150)
+  senhaHash String   @map("senha_hash") @db.VarChar(255)
+  criadoEm  DateTime @default(now()) @map("criado_em")
+
+  perfil        Perfil         @relation(fields: [perfilId], references: [id], onDelete: Restrict)
+  movimentacoes Movimentacao[]
+
+  @@map("usuarios")
+}
+
+model Produto {
+  id                Int       @id @default(autoincrement())
+  categoriaId       Int       @map("categoria_id")
+  sku               String    @unique @db.VarChar(50)
+  nome              String    @db.VarChar(150)
+  descricao         String?   @db.Text
+  marca             String?   @db.VarChar(100)
+  potenciaW         Int?      @map("potencia_w")
+  dimensoes         String?   @db.VarChar(100)
+  precoCompra       Decimal?  @map("preco_compra") @db.Decimal(10, 2)
+  precoVenda        Decimal?  @map("preco_venda") @db.Decimal(10, 2)
+  quantidadeAtual   Int       @default(0) @map("quantidade_atual")
+  quantidadeMinima  Int       @default(5) @map("quantidade_minima")
+  validade          DateTime? @db.Date
+  imagemUrl         String?   @map("imagem_url") @db.VarChar(255)
+  ativo             Boolean   @default(true)
+  criadoEm          DateTime  @default(now()) @map("criado_em")
+  atualizadoEm      DateTime  @updatedAt @map("atualizado_em")
+
+  categoria         Categoria            @relation(fields: [categoriaId], references: [id], onDelete: Restrict)
+  fornecedores      ProdutoFornecedor[]
+  movimentacaoItens MovimentacaoItem[]
+
+  @@map("produtos")
+}
+
+model ProdutoFornecedor {
+  produtoId    Int @map("produto_id")
+  fornecedorId Int @map("fornecedor_id")
+
+  produto    Produto    @relation(fields: [produtoId], references: [id], onDelete: Cascade)
+  fornecedor Fornecedor @relation(fields: [fornecedorId], references: [id], onDelete: Cascade)
+
+  @@id([produtoId, fornecedorId])
+  @@map("produto_fornecedor")
+}
+
+model Movimentacao {
+  id               Int              @id @default(autoincrement())
+  usuarioId         Int              @map("usuario_id")
+  fornecedorId      Int?             @map("fornecedor_id")
+  tipo             MovimentacaoTipo
+  status           String           @db.VarChar(50)
+  observacao       String?          @db.Text
+  dataMovimentacao DateTime         @default(now()) @map("data_movimentacao")
+
+  usuario    Usuario       @relation(fields: [usuarioId], references: [id], onDelete: Restrict)
+  fornecedor Fornecedor?   @relation(fields: [fornecedorId], references: [id], onDelete: SetNull)
+  itens      MovimentacaoItem[]
+
+  @@map("movimentacoes")
+}
+
+model MovimentacaoItem {
+  id             Int      @id @default(autoincrement())
+  movimentacaoId Int      @map("movimentacao_id")
+  produtoId      Int      @map("produto_id")
+  quantidade     Int
+  precoUnitario  Decimal? @map("preco_unitario") @db.Decimal(10, 2)
+
+  movimentacao Movimentacao @relation(fields: [movimentacaoId], references: [id], onDelete: Cascade)
+  produto      Produto      @relation(fields: [produtoId], references: [id], onDelete: Restrict)
+
+  @@map("movimentacao_itens")
+}
+
+model Notificacao {
+  id       Int             @id @default(autoincrement())
+  tipo     NotificacaoTipo
+  mensagem String          @db.Text
+  lida     Boolean         @default(false)
+  criadoEm DateTime        @default(now()) @map("criado_em")
+
+  @@map("notificacoes")
+}

@@ -1,0 +1,18 @@
+.supplier-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.supplier-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}

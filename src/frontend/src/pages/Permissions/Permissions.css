@@ -1,0 +1,105 @@
+.perm-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 20px;
+}
+
+.perm-role-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.perm-role-card.admin     { background: rgba(139,92,246,0.1); color: #8B5CF6; }
+.perm-role-card.gerente   { background: rgba(59,130,246,0.1); color: #3B82F6; }
+.perm-role-card.estoquista { background: rgba(0,196,140,0.1); color: var(--accent-green-dark); }
+.perm-role-card.vendedor  { background: rgba(245,158,11,0.1); color: var(--status-warning); }
+
+/* Reutilizando perfil-badge do Users.css */
+.perfil-badge.admin     { background: rgba(139,92,246,0.12); color: #8B5CF6; }
+.perfil-badge.gerente   { background: rgba(59,130,246,0.12); color: #3B82F6; }
+.perfil-badge.estoquista { background: rgba(0,196,140,0.12); color: var(--accent-green-dark); }
+.perfil-badge.vendedor  { background: rgba(245,158,11,0.12); color: var(--status-warning); }
+
+.perfil-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.perm-table .text-center {
+    text-align: center;
+}
+
+.perm-group-row td {
+    background: var(--bg-tertiary);
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--table-border);
+}
+
+.perm-group-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.perm-item-name {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+}
+
+.perm-check {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.12);
+    color: var(--status-success);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.perm-deny {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.perm-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+}
+
+.perm-note p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.perm-note a {
+    color: var(--accent-green-dark);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .perm-roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

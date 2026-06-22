@@ -1,0 +1,114 @@
+.profile-subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.profile-card {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-avatar {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-green-dark);
+    color: #fff;
+    font-size: 1.55rem;
+    font-weight: 800;
+    box-shadow: 0 12px 28px rgba(0, 143, 115, 0.24);
+}
+
+.profile-hero h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.profile-hero span {
+    display: inline-flex;
+    width: max-content;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(0, 217, 139, 0.12);
+    color: var(--accent-green-dark);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.profile-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--bg-input-hover);
+}
+
+.profile-detail-item svg {
+    color: var(--accent-green-dark);
+}
+
+.profile-detail-item div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.profile-detail-item span {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.profile-detail-item strong {
+    color: var(--text-primary);
+    font-size: 0.94rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.profile-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 217, 139, 0.22);
+    background: rgba(0, 217, 139, 0.08);
+    color: var(--accent-green-dark);
+}
+
+.profile-notice p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
