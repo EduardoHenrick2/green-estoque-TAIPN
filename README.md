@@ -23,7 +23,7 @@ Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+Paulo Augusto Isnard
 
 ## Instruções de utilização
 

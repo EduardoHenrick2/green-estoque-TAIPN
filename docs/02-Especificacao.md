@@ -78,7 +78,7 @@ Embora o projeto tenha natureza acadêmica, seu valor está na:
 
 Para representar melhor os perfis de usuários do Green Estoque, foram definidas as seguintes personas:
 
-![Persona 1](images/Persona_3.png)
+![Persona 1](images/Persona%201.png)
 
 ### Persona 1 — Lucas Ferreira, auxiliar de estoque
 * **Idade:** 24 anos.
@@ -88,7 +88,7 @@ Para representar melhor os perfis de usuários do Green Estoque, foram definidas
 * **Dores:** Perde tempo procurando materiais, precisa fazer contagens repetidas e às vezes encontra divergências entre o item físico e o registro informal.
 * **Necessidades:** Sistema simples, rápido, com busca eficiente e interface objetiva.
 
-![Persona 2](images/Persona_2.png)
+![Persona 2](images/Persona%202.png)
 ### Persona 2 — Mariana Souza, gestora operacional
 * **Idade:** 35 anos.
 * **Cargo:** Gestora operacional / responsável pelo estoque.
@@ -97,7 +97,7 @@ Para representar melhor os perfis de usuários do Green Estoque, foram definidas
 * **Dores:** Falta de informações atualizadas, dificuldade para ter visão geral e baixa confiabilidade dos registros manuais.
 * **Necessidades:** Dashboard com indicadores, alertas de estoque baixo, histórico de movimentações e informações confiáveis.
 
-![Persona 3](images/Persona_1.png)
+![Persona 3](images/Persona%203.png)
 
 ### Persona 3 — Carlos Henrique, diretor / decisor
 * **Idade:** 42 anos.
