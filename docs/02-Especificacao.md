@@ -1,113 +1,244 @@
 # Especificação do projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
+Esta seção apresenta a definição do problema e da proposta de solução do Green Estoque sob a perspectiva do usuário. O objetivo é detalhar as necessidades do negócio, as funcionalidades esperadas do sistema e as restrições envolvidas no projeto, garantindo que todos os integrantes da equipe compartilhem a mesma visão sobre o escopo e as prioridades da solução.
 
-Esta seção apresenta a definição do problema e a proposta de solução sob a perspectiva do usuário, utilizando técnicas de modelagem que permitam compreender e detalhar as necessidades do negócio e as funcionalidades esperadas do sistema.  
+O Green Estoque foi idealizado para atender à empresa Green Volt, que enfrenta dificuldades no controle manual de estoque de produtos e insumos do setor fotovoltaico. A solução proposta consiste em uma aplicação web voltada para organização, consulta e movimentação de produtos, com foco na redução de retrabalho, erros humanos e perda de tempo na rotina operacional.
 
-Nesta seção são apresentadas as personas, histórias de usuários, requisitos funcionais e não funcionais, bem como as restrições do projeto. Também são descritas as ferramentas e metodologias empregadas para elaborar essas especificações, garantindo que todos os participantes possuam uma compreensão unificada do escopo, dos objetivos e das prioridades do trabalho.
+---
 
-## Modelo de negócio (*Business Model Canvas*)
+## Modelo de negócio (Business Model Canvas)
 
-O *Business Model Canvas* (BMC) é uma ferramenta de planejamento estratégico que descreve, de forma visual e integrada, como uma organização cria, entrega e captura valor.  
+### 1. Parceiros-chave
+* Green Volt, como empresa parceira e cliente externo.
+* Colaboradores e gestores da empresa, que atuam como usuários e validadores do sistema.
+* Equipe de desenvolvimento do projeto.
+* PUC Minas e docentes orientadores.
+* Provedores de hospedagem e banco de dados, quando aplicável.
 
-No contexto deste projeto, o BMC auxilia no alinhamento da equipe em relação aos aspectos essenciais do negócio, servindo como base para decisões técnicas, de design e de priorização de funcionalidades.  
+### 2. Atividades-chave
+* Levantamento de requisitos com a empresa.
+* Modelagem dos processos de estoque.
+* Desenvolvimento da interface e das funcionalidades.
+* Cadastro, consulta e atualização de produtos.
+* Registro de movimentações de entrada e saída.
+* Testes e validação com usuários.
 
-A seguir, apresenta-se um exemplo que deve ser adaptado pelo grupo de acordo com as características do projeto.  
+### 3. Proposta de valor
+* Centralizar o controle de estoque em um sistema digital.
+* Reduzir retrabalho e contagens manuais.
+* Facilitar a localização e consulta de produtos.
+* Melhorar a confiabilidade das informações.
+* Apoiar decisões com dados mais organizados.
+* Reduzir erros operacionais no controle de inventário.
 
-![Quadro de modelo de negócios](images/bmc.png "Exemplo de BMC.")
+### 4. Relacionamento com clientes
+* Contato direto com o stakeholder externo.
+* Validação iterativa da solução com a Green Volt.
+* Coleta de feedback durante o desenvolvimento.
+* Melhoria contínua a partir das necessidades identificadas.
 
-> - O texto a seguir é apenas para orientação e deve ser apagado pelo grupo após a leitura.
+### 5. Segmentos de clientes
+* Colaboradores operacionais da Green Volt.
+* Responsáveis pelo estoque.
+* Gestores da empresa.
+* Direção da empresa.
 
-O quadro é composto por nove blocos que representam as principais áreas de um modelo de negócio:
-1. **Parceiros-chave**: identifique os parceiros estratégicos e descreva qual o papel de cada um no projeto.  
-2. **Atividades-chave**: liste as atividades essenciais para a entrega da proposta de valor.  
-3. **Proposta de valor**: explique por que os clientes escolheriam o produto/serviço, descrevendo o problema que ele resolve.  
-4. **Relacionamento com clientes**: defina as estratégias para conquistar, manter e fidelizar clientes.  
-5. **Segmentos de clientes**: caracterize os grupos de clientes que serão atendidos pela proposta de valor.  
-6. **Recursos-chave**: descreva os recursos humanos, tecnológicos, físicos ou financeiros necessários para implementar a solução.  
-7. **Canais de distribuição**: determine como a solução será disponibilizada e por quais meios o público-alvo será alcançado.  
-8. **Estrutura de custos**: analise os custos envolvidos no desenvolvimento, operação e manutenção do negócio.  
-9. **Fontes de receita**: indique como o negócio gerará receita, incluindo o modelo de monetização e a política de preços.  
+### 6. Recursos-chave
+* Equipe de desenvolvimento.
+* Conhecimento em desenvolvimento web e banco de dados.
+* Infraestrutura computacional.
+* Banco de dados relacional.
+* Protótipos de interface.
+* Repositório de código e ferramentas de gestão.
 
-> **Links úteis**:
-> - [Quadro de modelo de negócios](https://pt.wikipedia.org/wiki/Quadro_de_modelo_de_neg%C3%B3cios)
-> - [Business Model Canvas: como construir seu modelo de negócio?](https://digital.sebraers.com.br/blog/estrategia/business-model-canvas-como-construir-seu-modelo-de-negocio/)
+### 7. Canais
+* Sistema web acessado via navegador.
+* Reuniões com a empresa parceira.
+* Protótipo interativo.
+* Apresentação acadêmica e demonstração da solução.
+
+### 8. Estrutura de custos
+* Tempo de desenvolvimento.
+* Esforço de levantamento de requisitos.
+* Eventuais custos de hospedagem.
+* Ferramentas de prototipação e organização.
+* Manutenção e evolução futura da solução.
+
+### 9. Fontes de valor
+Embora o projeto tenha natureza acadêmica, seu valor está na:
+* Melhoria dos processos internos da empresa.
+* Redução de desperdícios operacionais.
+* Aumento da produtividade.
+* Apoio à transformação digital do cliente.
+* Ganho de experiência prática pela equipe desenvolvedora.
+
+---
 
 ## Personas
 
-Deve-se relacionar as personas identificadas no projeto. Enumere e detalhe as personas da sua solução. Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Para representar melhor os perfis de usuários do Green Estoque, foram definidas as seguintes personas:
 
-![Exemplo de persona](images/exemplo-persona.png)
+![Persona 1](C:\Users\eduar\OneDrive\Desktop\Nova pasta\green-estoque-TAIPN\docs\images\Persona 3.png)
 
-> **Links úteis**:
-> - [Rock content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
+### Persona 1 — Lucas Ferreira, auxiliar de estoque
+* **Idade:** 24 anos.
+* **Cargo:** Auxiliar de estoque.
+* **Nível de afinidade com tecnologia:** Intermediário.
+* **Objetivo:** Localizar rapidamente produtos e registrar movimentações sem depender de anotações manuais.
+* **Dores:** Perde tempo procurando materiais, precisa fazer contagens repetidas e às vezes encontra divergências entre o item físico e o registro informal.
+* **Necessidades:** Sistema simples, rápido, com busca eficiente e interface objetiva.
+
+![Persona 2](C:\Users\eduar\OneDrive\Desktop\Nova pasta\green-estoque-TAIPN\docs\images\Persona 2.png)
+### Persona 2 — Mariana Souza, gestora operacional
+* **Idade:** 35 anos.
+* **Cargo:** Gestora operacional / responsável pelo estoque.
+* **Nível de afinidade com tecnologia:** Intermediário a alto.
+* **Objetivo:** Acompanhar a situação do estoque, identificar produtos em baixa e tomar decisões de reposição.
+* **Dores:** Falta de informações atualizadas, dificuldade para ter visão geral e baixa confiabilidade dos registros manuais.
+* **Necessidades:** Dashboard com indicadores, alertas de estoque baixo, histórico de movimentações e informações confiáveis.
+
+![Persona 1](C:\Users\eduar\OneDrive\Desktop\Nova pasta\green-estoque-TAIPN\docs\images\Persona 1.png)
+### Persona 3 — Carlos Henrique, diretor / decisor
+* **Idade:** 42 anos.
+* **Cargo:** Diretor / gestor estratégico.
+* **Nível de afinidade com tecnologia:** Intermediário.
+* **Objetivo:** Garantir que a empresa trabalhe com mais eficiência e menos desperdício.
+* **Dores:** Impactos da desorganização no atendimento, no tempo de resposta e na confiabilidade das informações.
+* **Necessidades:** Visão executiva do sistema, dados resumidos e apoio à tomada de decisão.
+
+---
 
 ## Histórias de usuários
 
-Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
+Com base nas personas definidas, foram elaboradas as seguintes histórias de usuário.
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+### Contexto 1 — Acesso ao sistema
 
-Apresente aqui as histórias de usuários que são relevantes para o projeto da sua solução. As histórias de usuários consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuários por contexto, para facilitar consultas recorrentes a esta parte do documento.
+| EU COMO... | QUERO/PRECISO... | PARA... |
+| :--- | :--- | :--- |
+| Colaborador autorizado | fazer login com e-mail e senha | acessar o sistema com segurança |
+| Colaborador autorizado | recuperar minha senha | voltar a acessar o sistema caso eu esqueça minhas credenciais |
+| Gestora operacional | autorizar o acesso de colaboradores ao sistema | garantir que apenas pessoas liberadas pela empresa possam usar a aplicação |
+| Diretor / gestor | definir quais colaboradores podem acessar o sistema | manter o controle sobre o uso da ferramenta dentro da empresa |
 
-> **Links úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (user stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 common user story mistakes](https://airfocus.com/blog/user-story-mistakes/)
+### Contexto 2 — Consulta e controle de produtos
+
+| EU COMO... | QUERO/PRECISO... | PARA... |
+| :--- | :--- | :--- |
+| Auxiliar de estoque | pesquisar produtos por nome, categoria, marca ou código | localizar rapidamente um item no estoque |
+| Auxiliar de estoque | visualizar quantidade disponível e status do produto | saber se o item está disponível antes de movimentá-lo |
+| Gestora operacional | cadastrar novos produtos | manter o catálogo de estoque atualizado |
+| Gestora operacional | editar informações dos produtos | corrigir ou atualizar dados quando necessário |
+| Gestora operacional | visualizar produtos com estoque baixo | agir antes da falta de materiais |
+
+### Contexto 3 — Movimentações de estoque
+
+| EU COMO... | QUERO/PRECISO... | PARA... |
+| :--- | :--- | :--- |
+| Auxiliar de estoque | registrar entrada de produtos | manter o estoque atualizado quando novos itens chegarem |
+| Auxiliar de estoque | registrar saída de produtos | dar baixa nos itens retirados do estoque |
+| Gestora operacional | consultar o histórico de movimentações | acompanhar o fluxo de entrada e saída |
+| Gestora operacional | saber quem registrou uma movimentação | ter mais controle e rastreabilidade das operações |
+
+### Contexto 4 — Gestão e acompanhamento
+
+| EU COMO... | QUERO/PRECISO... | PARA... |
+| :--- | :--- | :--- |
+| Gestora operacional | visualizar um resumo do estoque no dashboard | acompanhar rapidamente a situação geral |
+| Diretor / gestor | visualizar indicadores principais | apoiar decisões com base em dados |
+| Gestora operacional | receber alertas de estoque baixo | agir de forma preventiva |
+| Diretor / gestor | acompanhar dados resumidos do estoque | avaliar eficiência, perdas e necessidade de reposição |
+
+---
 
 ## Requisitos
 
-As tabelas a seguir apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade dos requisitos, aplique uma técnica de priorização e detalhe como essa técnica foi aplicada.
+Para priorização dos requisitos, foi adotada uma adaptação da técnica **MoSCoW**, classificando os requisitos em:
+* **Alta:** essencial para o funcionamento mínimo da solução.
+* **Média:** importante, mas não indispensável na primeira versão.
+* **Baixa:** desejável, podendo ser implementado em versões futuras.
 
 ### Requisitos funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+| ID | Descrição do Requisito | Prioridade |
+| :--- | :--- | :--- |
+| **RF-001** | O sistema deve permitir que usuários autorizados realizem login com e-mail e senha. | ALTA |
+| **RF-002** | O sistema deve permitir que apenas usuários previamente autorizados pela empresa tenham acesso à aplicação. | ALTA |
+| **RF-003** | O sistema deve permitir a separação de permissões entre colaborador operacional, gestor operacional e direção. | ALTA |
+| **RF-004** | O sistema deve permitir a recuperação de senha. | MÉDIA |
+| **RF-005** | O sistema deve exibir um dashboard com resumo de informações do estoque. | ALTA |
+| **RF-006** | O sistema deve apresentar indicadores básicos, como quantidade de produtos cadastrados, itens em estoque baixo e total de movimentações. | ALTA |
+| **RF-007** | O sistema deve permitir o cadastro de produtos com dados como nome, categoria, marca, código/SKU, quantidade e valor mínimo de estoque. | ALTA |
+| **RF-008** | O sistema deve permitir editar informações de produtos já cadastrados. | ALTA |
+| **RF-009** | O sistema deve permitir listar os produtos cadastrados. | ALTA |
+| **RF-010** | O sistema deve permitir pesquisar e filtrar produtos por nome, categoria, marca ou código. | ALTA |
+| **RF-011** | O sistema deve indicar o status do produto, como “Em estoque”, “Estoque baixo” ou “Sem estoque”. | ALTA |
+| **RF-012** | O sistema deve permitir cadastrar fornecedores. | MÉDIA |
+| **RF-013** | O sistema deve permitir registrar movimentações de entrada de produtos. | ALTA |
+| **RF-014** | O sistema deve permitir registrar movimentações de saída de produtos. | ALTA |
+| **RF-015** | O sistema deve manter um histórico de movimentações com data, tipo, produto, quantidade e usuário responsável. | ALTA |
+| **RF-016** | O sistema deve permitir consultar a listagem de movimentações. | ALTA |
+| **RF-017** | O sistema deve emitir alertas para produtos abaixo do estoque mínimo. | ALTA |
+| **RF-018** | O sistema deve disponibilizar uma barra de busca para acesso rápido às informações do sistema. | MÉDIA |
+| **RF-019** | O sistema deve apresentar menu de navegação lateral para acesso aos módulos principais. | ALTA |
+| **RF-020** | O sistema deve permitir logout do usuário. | ALTA |
+| **RF-021** | O sistema deve restringir funções críticas conforme o nível de permissão do usuário. | ALTA |
+| **RF-022** | O sistema deve registrar o usuário responsável por alterações e movimentações relevantes. | ALTA |
+| **RF-023** | O sistema deve permitir exportar listagens de produtos e movimentações. | MÉDIA |
+| **RF-024** | O sistema deve permitir upload de imagem do produto. | BAIXA |
+| **RF-025** | O sistema deve apresentar notificações no cabeçalho ou em área visível da interface. | MÉDIA |
 
 ### Requisitos não funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em dispositivos móveis | MÉDIA | 
-|RNF-002| Deve processar as requisições do usuário em no máximo 3 segundos |  BAIXA | 
+| ID | Descrição do Requisito | Prioridade |
+| :--- | :--- | :--- |
+| **RNF-001** | O sistema deve possuir interface responsiva para uso em desktop e, quando possível, tablets. | ALTA |
+| **RNF-002** | O sistema deve seguir uma identidade visual padronizada, com uso consistente das cores do projeto e da empresa. | MÉDIA |
+| **RNF-003** | O sistema deve apresentar boa usabilidade, com navegação simples e intuitiva. | ALTA |
+| **RNF-004** | O carregamento das principais páginas não deve ultrapassar 3 segundos em condições normais de uso. | MÉDIA |
+| **RNF-005** | O sistema deve utilizar autenticação segura para acesso às rotas protegidas. | ALTA |
+| **RNF-006** | As senhas dos usuários devem ser armazenadas de forma segura, com hashing apropriado. | ALTA |
+| **RNF-007** | O sistema deve garantir que apenas usuários autorizados possam acessar informações sensíveis. | ALTA |
+| **RNF-008** | O código-fonte deve ser organizado de forma modular, facilitando manutenção e evolução. | MÉDIA |
+| **RNF-009** | O sistema deve permitir crescimento futuro sem comprometer a organização da base do projeto. | MÉDIA |
+| **RNF-010** | O sistema deve preservar a consistência dos dados de estoque, evitando quantidades negativas e alterações indevidas. | ALTA |
 
-Com base nas histórias de usuários, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos não funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-Lembre-se de que cada requisito deve corresponder a uma e somente uma característica-alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas histórias de usuários foram cobertos.
-
-> **Links úteis**:
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [Entenda o que são requisitos de software, a diferença entre requisito funcional e não funcional, e como identificar e documentar cada um deles](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+---
 
 ## Restrições
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+A solução proposta está sujeita às seguintes restrições:
 
-O projeto está restrito aos itens apresentados na tabela a seguir.
+| ID | Restrição |
+| :--- | :--- |
+| **R-001** | Somente pessoas autorizadas pela empresa poderão acessar o sistema. |
+| **R-002** | A liberação de acesso ao sistema deverá depender de autorização do responsável da empresa, gestor operacional ou direção. |
+| **R-003** | Colaboradores operacionais não poderão acessar funcionalidades estratégicas ou de configuração da aplicação. |
+| **R-004** | Apenas usuários com permissão de gestão poderão cadastrar, editar ou remover informações sensíveis, conforme decisão da empresa. |
+| **R-005** | O sistema deverá respeitar a hierarquia de acesso definida pela Green Volt, separando permissões entre colaborador operacional, gestor operacional e direção. |
+| **R-006** | O sistema deverá ser compatível com a realidade operacional da Green Volt, evitando funcionalidades complexas demais para a rotina atual da empresa. |
+| **R-007** | O sistema deverá ser desenvolvido dentro do prazo acadêmico estabelecido para a disciplina. |
+| **R-008** | O escopo implementado deverá considerar o tempo disponível da equipe e a viabilidade técnica do projeto. |
+| **R-009** | A solução deverá ser baseada em ambiente web, acessível por navegador, sem dependência inicial de aplicativo mobile. |
+| **R-010** | O sistema não deverá permitir exclusão ou alteração irrestrita de dados sem autenticação e autorização adequadas. |
+| **R-011** | O acesso ao estoque e às movimentações deverá ser rastreável, sempre que possível, por meio do registro do usuário responsável. |
+| **R-012** | Funcionalidades não essenciais para a primeira versão, como integração com nota fiscal, leitor de código de barras, aplicativo mobile ou serviços externos complexos, poderão ser tratadas como melhorias futuras. |
+| **R-013** | A primeira versão do sistema deverá priorizar o controle de produtos e movimentações, sem obrigatoriedade de incluir módulos financeiros avançados. |
+| **R-014** | A utilização do sistema dependerá de conexão com a internet ou rede interna, conforme ambiente definido para hospedagem. |
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|001| O projeto deverá ser entregue até o final do semestre |
-|002| O custo total do projeto não deve exceder o orçamento definido |
+---
+
+## Observações finais da especificação
+
+A especificação do Green Estoque foi construída com foco na realidade do cliente e na viabilidade do projeto dentro do contexto acadêmico. Por isso, prioriza-se um conjunto de funcionalidades centrais para resolver o problema principal da empresa: a desorganização e a baixa confiabilidade no controle de estoque.
+
+Assim, a primeira versão da solução concentra-se em:
+* Autenticação e controle de acesso;
+* Cadastro e consulta de produtos;
+* Registro de movimentações;
+* Dashboard com visão geral;
+* Alertas de estoque baixo;
+* Rastreabilidade das operações;
+* Restrição de acesso conforme autorização da empresa.
+
+Funcionalidades complementares ou mais avançadas poderão ser tratadas como expansão futura da plataforma.
