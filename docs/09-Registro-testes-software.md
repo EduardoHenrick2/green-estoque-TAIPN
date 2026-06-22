@@ -2,32 +2,181 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>, <a href="08-Plano-testes-software.md"> Plano de testes de software</a>
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes predefinido.
+O registro de testes do **Green Estoque** apresenta as evidências dos testes realizados nas principais funcionalidades do sistema. Os testes foram baseados no plano de testes definido anteriormente, com foco em autenticação, produtos, movimentações e controle de estoque.
 
-Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano de testes de software</a>, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos. Observação: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso.
+As evidências devem ser inseridas por meio de capturas de tela ou vídeos demonstrando a execução de cada caso de teste.
 
-| **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
- 
- Responsável pelo registro da evidência: nome do integrante da equipe.
+---
 
- https://github.com/user-attachments/assets/77072a41-a48e-4130-be67-cc6a21941b06 
+## CT-001 — Realizar login
 
-| **Caso de teste** 	| **CT-002 – Realizar login** 	|
-|:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
+| Item                          | Descrição                                                                                    |
+| ----------------------------- | -------------------------------------------------------------------------------------------- |
+| **Requisito associado**       | RF-001 — O sistema deve permitir que usuários autorizados realizem login com e-mail e senha. |
+| **Resultado esperado**        | O usuário deve ser redirecionado para o dashboard após informar credenciais válidas.         |
+| **Resultado obtido**          | Inserir resultado do teste.                                                                  |
+| **Status**                    | Aprovado / Reprovado                                                                         |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                                 |
 
- Responsável pelo registro da evidência: nome do integrante da equipe.
+**Evidência:**
 
- https://github.com/user-attachments/assets/77072a41-a48e-4130-be67-cc6a21941b06 
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
 
+---
 
-> **Links úteis**:
-> - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
-## Avaliação
+## CT-002 — Consultar produto
 
-Discorra sobre os resultados do teste, ressaltando os pontos fortes e fracos identificados na solução. Comente como o grupo pretende abordar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+| Item                          | Descrição                                                                                      |
+| ----------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Requisito associado**       | RF-009, RF-010 e RF-011 — O sistema deve listar, pesquisar e indicar o status dos produtos.    |
+| **Resultado esperado**        | O sistema deve exibir o produto pesquisado, sua quantidade disponível e seu status de estoque. |
+| **Resultado obtido**          | Inserir resultado do teste.                                                                    |
+| **Status**                    | Aprovado / Reprovado                                                                           |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                                   |
 
-> **Links úteis**:
-> - [Ferramentas de Teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-003 — Cadastrar produto
+
+| Item                          | Descrição                                                   |
+| ----------------------------- | ----------------------------------------------------------- |
+| **Requisito associado**       | RF-007 — O sistema deve permitir o cadastro de produtos.    |
+| **Resultado esperado**        | O produto deve ser salvo e exibido na listagem de produtos. |
+| **Resultado obtido**          | Inserir resultado do teste.                                 |
+| **Status**                    | Aprovado / Reprovado                                        |
+| **Responsável pelo registro** | Nome do integrante da equipe                                |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-004 — Editar produto
+
+| Item                          | Descrição                                                                    |
+| ----------------------------- | ---------------------------------------------------------------------------- |
+| **Requisito associado**       | RF-008 — O sistema deve permitir editar informações de produtos cadastrados. |
+| **Resultado esperado**        | O sistema deve atualizar corretamente os dados do produto.                   |
+| **Resultado obtido**          | Inserir resultado do teste.                                                  |
+| **Status**                    | Aprovado / Reprovado                                                         |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                 |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-005 — Registrar entrada de estoque
+
+| Item                          | Descrição                                                                                |
+| ----------------------------- | ---------------------------------------------------------------------------------------- |
+| **Requisito associado**       | RF-013 e RF-015 — O sistema deve registrar entradas e manter histórico de movimentações. |
+| **Resultado esperado**        | A quantidade do produto deve aumentar e a movimentação deve aparecer no histórico.       |
+| **Resultado obtido**          | Inserir resultado do teste.                                                              |
+| **Status**                    | Aprovado / Reprovado                                                                     |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                             |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-006 — Registrar saída de estoque
+
+| Item                          | Descrição                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------- |
+| **Requisito associado**       | RF-014 e RF-015 — O sistema deve registrar saídas e manter histórico de movimentações. |
+| **Resultado esperado**        | A quantidade do produto deve diminuir e a movimentação deve aparecer no histórico.     |
+| **Resultado obtido**          | Inserir resultado do teste.                                                            |
+| **Status**                    | Aprovado / Reprovado                                                                   |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                           |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-007 — Validar estoque insuficiente
+
+| Item                          | Descrição                                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------------------------ |
+| **Requisito associado**       | RF-014 e RNF-010 — O sistema deve evitar inconsistências, como estoque negativo.           |
+| **Resultado esperado**        | O sistema deve bloquear saída maior que a quantidade disponível e exibir mensagem de erro. |
+| **Resultado obtido**          | Inserir resultado do teste.                                                                |
+| **Status**                    | Aprovado / Reprovado                                                                       |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                               |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## CT-008 — Verificar alerta de estoque baixo
+
+| Item                          | Descrição                                                                      |
+| ----------------------------- | ------------------------------------------------------------------------------ |
+| **Requisito associado**       | RF-017 — O sistema deve emitir alertas para produtos abaixo do estoque mínimo. |
+| **Resultado esperado**        | O sistema deve indicar que o produto está com estoque baixo.                   |
+| **Resultado obtido**          | Inserir resultado do teste.                                                    |
+| **Status**                    | Aprovado / Reprovado                                                           |
+| **Responsável pelo registro** | Nome do integrante da equipe                                                   |
+
+**Evidência:**
+
+[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+
+---
+
+## Resumo dos testes
+
+| Caso de teste | Funcionalidade                    |        Status        |
+| ------------- | --------------------------------- | :------------------: |
+| CT-001        | Login no sistema                  | Aprovado / Reprovado |
+| CT-002        | Consulta de produtos              | Aprovado / Reprovado |
+| CT-003        | Cadastro de produto               | Aprovado / Reprovado |
+| CT-004        | Edição de produto                 | Aprovado / Reprovado |
+| CT-005        | Entrada de estoque                | Aprovado / Reprovado |
+| CT-006        | Saída de estoque                  | Aprovado / Reprovado |
+| CT-007        | Validação de estoque insuficiente | Aprovado / Reprovado |
+| CT-008        | Alerta de estoque baixo           | Aprovado / Reprovado |
+
+---
+
+## Avaliação dos resultados
+
+A execução dos testes permitiu verificar se as funcionalidades principais do Green Estoque atendem aos requisitos definidos no projeto. Os testes relacionados a login, cadastro de produtos, consulta de estoque e movimentações são essenciais para validar o funcionamento básico da aplicação.
+
+### Pontos fortes identificados
+
+* Interface simples e objetiva;
+* Fluxo de navegação direto;
+* Organização das informações de produtos;
+* Registro de movimentações de estoque;
+* Possibilidade de controle mais confiável das quantidades.
+
+### Pontos de melhoria identificados
+
+* Inserir aqui falhas encontradas durante os testes;
+* Ajustar mensagens de erro, caso necessário;
+* Melhorar validações de campos obrigatórios;
+* Refinar a exibição de alertas de estoque baixo;
+* Corrigir eventuais inconsistências entre interface e banco de dados.
+
+### Melhorias previstas
+
+Com base nos resultados dos testes, a equipe poderá realizar ajustes na interface, nas validações e nas regras de negócio. Também poderão ser adicionadas melhorias futuras, como relatórios, filtros avançados, exportação de dados e controle mais detalhado de permissões.
+
+---
+
+## Considerações finais
+
+O registro de testes evidencia o processo de validação do Green Estoque e demonstra se os requisitos essenciais foram atendidos. As evidências inseridas nesta seção devem comprovar o funcionamento das principais funcionalidades e apoiar a avaliação final da solução desenvolvida para a Green Volt.
