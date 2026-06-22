@@ -1,51 +1,91 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. Visando contextualizar melhor o projeto e destacar sua importância para a disciplina, que é **extensionista**, acrescente todas as informações relevantes que julgar necessárias.
+O presente projeto tem como objetivo apresentar o desenvolvimento do Green Estoque, um sistema digital de controle de estoque criado para apoiar os processos internos da empresa Green Volt, atuante no setor de energia solar. A proposta surgiu a partir da identificação de uma demanda real observada durante o contato da equipe com gestores e colaboradores da organização, em que foi constatada a necessidade de melhorar a organização, o registro e o acompanhamento dos produtos armazenados.
 
-## Cliente 
-Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (parceiro) para garantir um entendimento mais preciso do projeto como uma iniciativa extensionista.  
+Atualmente, o controle de estoque da empresa ocorre de forma predominantemente manual, com registros em planilhas, anotações informais e contagens físicas recorrentes. Esse processo exige tempo dos colaboradores, gera retrabalho e aumenta a possibilidade de falhas humanas, principalmente porque os produtos relacionados à energia fotovoltaica podem ser volumosos, pesados e possuir características técnicas específicas, como potência, tensão, dimensões, marca e modelo.
 
-Recomenda-se incluir dados como missão, visão e valores da organização, além de seu ramo de atuação, porte, nicho de mercado e principais desafios enfrentados. Também é relevante fornecer informações sobre sua localização, histórico, impacto social e possíveis demandas específicas. Quanto mais detalhadas forem essas informações, mais embasada será a análise do contexto, permitindo uma abordagem estratégica e alinhada às necessidades do cliente.
+Diante desse cenário, o Green Estoque propõe uma solução web integrada a um banco de dados relacional, permitindo o cadastro, a categorização, a consulta e a atualização das informações dos produtos de forma mais ágil, organizada e confiável. A aplicação busca contribuir para a modernização dos processos internos da Green Volt, reduzindo falhas operacionais, facilitando a localização de materiais e apoiando a tomada de decisão dos gestores.
+
+Além de atender a uma necessidade prática da empresa parceira, o projeto possui caráter extensionista, pois aplica conhecimentos acadêmicos de análise de sistemas, banco de dados, desenvolvimento web e processos de negócio em um contexto real. Dessa forma, a solução aproxima a universidade da comunidade empresarial, contribuindo para a melhoria de processos em uma empresa do setor de energia renovável.
+
+## Cliente
+
+A empresa parceira do projeto é a Green Volt, uma organização do setor de energia solar que atua com a comercialização, distribuição e/ou utilização de equipamentos fotovoltaicos. Seu contexto operacional envolve o manuseio de produtos como placas solares, inversores, cabos, conectores, estruturas, peças e ferramentas utilizadas em instalações e serviços relacionados à energia solar.
+
+Por atuar em um segmento que depende de materiais técnicos e de alto valor agregado, a Green Volt necessita de um controle de estoque confiável, atualizado e de fácil acesso. A falta de organização nesse processo pode dificultar a localização de produtos, comprometer o atendimento ao cliente, gerar atrasos e causar divergências entre o estoque físico e os registros utilizados pela empresa.
+
+Entre os principais desafios identificados no cliente, destacam-se:
+* Ausência de catalogação centralizada dos produtos;
+* Necessidade de contagens manuais frequentes;
+* Dificuldade de localização rápida de itens no estoque;
+* Risco de erros nos registros de quantidade;
+* Retrabalho por parte dos colaboradores;
+* Esforço físico desnecessário no manuseio e conferência de equipamentos;
+* Falta de dados consolidados para tomada de decisão.
+
+Nesse contexto, o Green Estoque busca oferecer uma solução alinhada às necessidades reais da empresa, permitindo maior organização, rastreabilidade e eficiência no controle dos insumos e produtos fotovoltaicos.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+O principal problema identificado na Green Volt está relacionado à ausência de um controle de estoque centralizado, digital e atualizado. Atualmente, os produtos não são devidamente catalogados em um sistema único, o que obriga os colaboradores a realizarem verificações manuais para confirmar a disponibilidade de itens.
 
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
+Esse processo manual gera diversos impactos negativos. Primeiramente, há retrabalho, pois os mesmos materiais precisam ser conferidos repetidas vezes. Além disso, a conferência física pode exigir movimentação de produtos grandes ou pesados, aumentando o desgaste dos colaboradores e tornando a rotina operacional menos eficiente.
 
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Outro ponto crítico é a baixa confiabilidade das informações. Quando o estoque depende de planilhas, anotações ou conferências informais, erros de contagem e divergências entre o estoque real e o estoque registrado tornam-se mais comuns. Como consequência, a empresa pode enfrentar atrasos no atendimento, perda de vendas, dificuldade de reposição e insatisfação dos clientes.
+
+Dessa forma, o problema central pode ser definido pela seguinte questão:
+> *Como um software pode auxiliar a Green Volt no controle de estoque, reduzindo retrabalho, erros operacionais, esforço físico dos colaboradores e inconsistências nas informações dos produtos?*
+
+O problema não se limita apenas à organização dos itens armazenados. Ele também possui impacto estratégico, pois afeta a eficiência da empresa, a agilidade no atendimento, a confiabilidade dos dados e a capacidade de tomar decisões com base em informações atualizadas.
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
+### Objetivo geral
+Desenvolver um sistema digital integrado a um banco de dados para o gerenciamento e controle de estoque da empresa Green Volt, visando otimizar a localização de produtos, reduzir o desgaste físico dos colaboradores, diminuir falhas operacionais e tornar as informações do inventário mais confiáveis.
 
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
- 
-> **Links úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+* Criar um sistema de categorização de produtos que permita organizar placas solares, peças, ferramentas e demais materiais de acordo com características como categoria, potência, tamanho, marca e quantidade disponível.
+* Substituir o controle manual e os registros informais por uma aplicação digital capaz de centralizar as informações do estoque.
+* Reduzir o tempo necessário para localizar produtos e verificar sua disponibilidade.
+* Diminuir o retrabalho gerado por contagens manuais repetitivas.
+* Melhorar a confiabilidade dos dados relacionados ao estoque, reduzindo divergências entre os registros e a quantidade física de produtos.
+* Facilitar o acompanhamento de entradas, saídas e movimentações de produtos.
+* Apoiar gestores e colaboradores na tomada de decisão por meio de informações mais claras, acessíveis e atualizadas.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A criação do Green Estoque se justifica pela necessidade de modernizar o processo de controle de estoque da Green Volt. O método manual utilizado atualmente apresenta limitações significativas, como retrabalho, inconsistências nas informações, lentidão na localização de produtos e esforço físico desnecessário por parte dos colaboradores.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A adoção de um sistema digital permite que a empresa tenha maior controle sobre seus produtos, reduzindo falhas humanas e melhorando a organização dos dados. Com informações centralizadas, a equipe consegue consultar a disponibilidade dos itens de forma mais rápida, registrar movimentações com maior precisão e acompanhar o estoque com mais segurança.
 
-> **Links úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além dos benefícios operacionais, o projeto contribui para a melhoria da experiência dos colaboradores e clientes. Para os funcionários, a solução reduz tarefas repetitivas e facilita a rotina de trabalho. Para os clientes, a empresa passa a ter maior agilidade no atendimento e maior previsibilidade sobre a disponibilidade dos produtos.
+
+O projeto também se justifica pelo crescimento do setor de energia solar, que exige cada vez mais eficiência na comercialização, organização e entrega de equipamentos fotovoltaicos. Ao melhorar seus processos internos, a Green Volt fortalece sua capacidade de atendimento e contribui indiretamente para a disseminação de soluções baseadas em energia renovável.
+
+Por fim, o desenvolvimento do sistema representa uma oportunidade de aplicar, em um cenário real, conhecimentos acadêmicos relacionados a processos de negócio, banco de dados, desenvolvimento web, levantamento de requisitos, modelagem e experiência do usuário. Assim, o projeto une aprendizado acadêmico, inovação e impacto prático para a empresa parceira.
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo do Green Estoque é composto principalmente pelos colaboradores e gestores da Green Volt que participam direta ou indiretamente do controle de estoque, da organização de materiais e do atendimento aos clientes. 
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual e do mapa de stakeholders.
+Os principais perfis de usuários são:
 
-> **Links úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público-alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+| Perfil | Descrição | Necessidade principal |
+| :--- | :--- | :--- |
+| **Colaborador operacional** | Usuário responsável por consultar produtos, verificar disponibilidade e registrar movimentações no estoque. | Encontrar informações rapidamente e reduzir conferências manuais. |
+| **Gestor ou responsável pelo estoque** | Usuário que acompanha indicadores, controla produtos, analisa movimentações e toma decisões sobre reposição. | Ter visão geral do estoque e dados confiáveis para decisão. |
+| **Administrador do sistema** | Usuário com maior nível de permissão, responsável por gerenciar acessos, cadastros e configurações. | Garantir segurança, organização e controle das informações. |
+| **Cliente final da Green Volt** | Pessoa atendida pela empresa, interessada na disponibilidade de produtos e agilidade no atendimento. | Receber atendimento mais rápido e confiável. |
+| **Equipe acadêmica** | Discentes e docentes responsáveis pelo desenvolvimento, documentação e validação do projeto. | Aplicar conhecimentos acadêmicos em um problema real. |
+
+### Mapa de stakeholders
+
+| Stakeholder | Papel no projeto | Interesse no sistema | Impacto esperado |
+| :--- | :--- | :--- | :--- |
+| **Green Volt** | Cliente/parceiro externo | Melhorar o controle de estoque e reduzir falhas operacionais. | Maior eficiência e organização interna. |
+| **Colaboradores da empresa** | Usuários diretos | Consultar e movimentar produtos com facilidade. | Menos retrabalho e menor esforço físico. |
+| **Gestores da empresa** | Usuários estratégicos | Acompanhar dados do estoque e apoiar decisões. | Melhor controle e planejamento. |
+| **Clientes da Green Volt** | Beneficiários indiretos | Receber atendimento mais ágil e preciso. | Melhor experiência de compra e atendimento. |
+| **Alunos desenvolvedores** | Equipe do projeto | Desenvolver uma solução real aplicando conhecimentos acadêmicos. | Aprendizado prático e entrega extensionista. |
+| **Professores orientadores** | Acompanhamento acadêmico | Orientar o desenvolvimento e avaliar a solução. | Garantia de qualidade acadêmica e metodológica. |
+| **PUC Minas** | Instituição de ensino | Promover prática extensionista e integração com a comunidade. | Fortalecimento da relação universidade-sociedade. |
