@@ -1,28 +1,35 @@
 cff-version: 1.2.0
 message: "Please cite this software using these metadata."
-title: Coloque aqui o título do seu trabalho
+title: Green Estoque - Desenvolvimento de um Sistema para Gerenciamento de Estoque de Produtos Recicláveis
 authors:
-  - family-names: Sobrenome do aluno 1
-    given-names: Nome do aluno 1
-  - family-names: Sobrenome do aluno 2
-    given-names: Nome do aluno 2
-  - family-names: Sobrenome do aluno 3
-    given-names: Nome do aluno 3
-  - family-names: Sobrenome do aluno 4
-    given-names: Nome do aluno 4
-  - family-names: Sobrenome do aluno 5
-    given-names: Nome do aluno 5
-  - family-names: Sobrenome do aluno 6
-    given-names: Nome do aluno 6
-  - family-names: Sobrenome do(a) professor(a)
-    given-names: Nome do(a) professor(a)
-    name-suffix: "Professor(a)"
+
+    given-names: Benetido Meideros
+
+    given-names: Eduardo Henrick
+
+    given-names: Caique de Lima
+
+    given-names: Fabio Henrique
+
+    given-names: Gustavo Ferreira
+
+    given-names: João Gabriel dos Santos  
+
+    given-names: Matheus Aurélio
+
+    given-names: Raphael Henrique
+
+    given-names: Victor Hugo Ribeiro
+
+    given-names: Wesley Andre Melo
+
+    given-names: Paulo Augusto Isnard Santos
+    name-suffix: "Professor"
     affiliation: PUC Minas
 keywords:
-    - coloque aqui a palavra-chave 1
-    - coloque aqui a palavra-chave 2
-    - coloque aqui a palavra-chave 3
-repository-code: coloque o link do seu repositório
+    - "Gestão de Estoque"
+    - "Desenvolvimento de Software"
+repository-code: https://github.com/EduardoHenrick2/green-estoque-TAIPN
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2025-08-13 # atualize a data
+date-released: 2026-06-22 

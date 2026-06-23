@@ -17,7 +17,7 @@ O fluxo atual ocorre da seguinte forma: o colaborador identifica a entrada ou sa
 * **Resultado esperado:** Registrar entrada ou saída de produto e atualizar a quantidade disponível
 * **Impacto no negócio:** Pode causar retrabalho, inconsistência nas informações e atrasos no atendimento
 
-![Modelo BPMN do Processo 2](images/processo2.png)
+![Modelo BPMN do Processo 2](../images/processo2.png)
 
 #### Detalhamento das atividades
 

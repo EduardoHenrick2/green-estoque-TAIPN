@@ -20,7 +20,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/testLogin.mp4)
+![Vídeo ou print do teste](images/testLogin.mp4)
 
 
 ---
@@ -37,7 +37,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/consulta.mp4)
+![Vídeo ou print do teste](images/consulta.mp4)
 
 ---
 
@@ -53,7 +53,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/Cadastro.mp4)
+![Vídeo ou print do teste](images/Cadastro.mp4)
 
 ---
 
@@ -69,7 +69,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/editar.mp4)
+![Vídeo ou print do teste](images/editar.mp4)
 
 ---
 
@@ -85,7 +85,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/entrada.mp4)
+![Vídeo ou print do teste](images/entrada.mp4)
 
 ---
 
@@ -101,7 +101,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/saida.mp4)
+![Vídeo ou print do teste](images/saida.mp4)
 
 ---
 
@@ -117,7 +117,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](images/estoqueBaixo.mp4)
+![Vídeo ou print do teste](images/estoqueBaixo.mp4)
 
 ---
 
