@@ -38,7 +38,7 @@ Esta seção apresenta as instruções para instalação, configuração e execu
 Para fins de demonstração e validação do sistema, poderá ser utilizado o seguinte usuário de teste:
 
 ```text
-Usuário: admin@greenestoque.com
+Usuário: admin@greenvolt.com.br
 Senha: admin123
 Perfil: Administrador
 ```
