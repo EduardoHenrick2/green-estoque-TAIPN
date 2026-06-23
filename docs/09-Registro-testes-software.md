@@ -20,7 +20,8 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\testLogin.mp4)
+
 
 ---
 
@@ -36,7 +37,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\consulta.mp4)
 
 ---
 
@@ -52,7 +53,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\Cadastro.mp4)
 
 ---
 
@@ -68,7 +69,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\editar.mp4)
 
 ---
 
@@ -84,7 +85,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\entrada.mp4)
 
 ---
 
@@ -100,7 +101,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\saida.mp4)
 
 ---
 
@@ -116,7 +117,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\estoqueBaixo.png)
 
 ---
 
@@ -132,7 +133,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](INSERIR_LINK_DA_EVIDENCIA)
+[Vídeo ou print do teste](imagem\estoqueBaixo.png)
 
 ---
 
@@ -147,7 +148,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 | CT-005        | Entrada de estoque                | Aprovado / Reprovado |
 | CT-006        | Saída de estoque                  | Aprovado / Reprovado |
 | CT-007        | Validação de estoque insuficiente | Aprovado / Reprovado |
-| CT-008        | Alerta de estoque baixo           | Aprovado / Reprovado |
+
 
 ---
 

@@ -97,9 +97,8 @@ Telas contempladas:
 
 **Link do protótipo ou aplicação:**
 
-[Green Estoque - Movimentações](https://green-estoque.vercel.app/movements)
 
-[Protótipo no Figma](INSERIR_LINK_DO_FIGMA)
+[Protótipo no Figma](https://www.figma.com/proto/GOwry8to5qyTEeV3px09Ik/Inventory-Management-Dashboard--Community---Copy-?node-id=1502-646)
 
 ---
 
@@ -138,7 +137,7 @@ Principais elementos:
 * alertas;
 * atalhos para os principais módulos.
 
-![Dashboard do Green Estoque](images/dashboard.png)
+![Dashboard do Green Estoque](images/Dashboard.png)
 
 ---
 
@@ -157,7 +156,7 @@ Principais funcionalidades:
 * indicação do status do estoque;
 * acesso ao cadastro ou edição de produtos.
 
-![Tela de produtos](images/produtos.png)
+![Tela de produtos](images/Produtos.png)
 
 #### Tela de cadastro de produto
 
@@ -173,7 +172,7 @@ Campos principais:
 * estoque mínimo;
 * fornecedor.
 
-![Cadastro de produto](images/cadastro-produto.png)
+![Cadastro de produto](images/CadastroProduto.png)
 
 ---
 
@@ -191,7 +190,7 @@ Principais informações:
 * data;
 * responsável, quando disponível.
 
-![Tela de movimentações](images/movimentacoes.png)
+![Tela de movimentações](images/Movimentações.png)
 
 #### Tela de cadastro de movimentação
 
@@ -205,7 +204,7 @@ Campos principais:
 * data;
 * observação.
 
-![Cadastro de movimentação](images/cadastro-movimentacao.png)
+![Cadastro de movimentação](images/CadastroMovimentação.png)
 
 ---
 
@@ -215,13 +214,13 @@ Campos principais:
 
 A tela de login controla o acesso ao sistema, permitindo que apenas usuários autorizados utilizem a aplicação.
 
-![Tela de login](images/login.png)
+![Tela de login](images/Login.png)
 
 ### Tela de fornecedores
 
 A tela de fornecedores permite cadastrar e consultar fornecedores vinculados aos produtos do estoque, caso essa funcionalidade esteja disponível na versão final.
 
-![Tela de fornecedores](images/fornecedores.png)
+![Tela de fornecedores](images/Fornecedores.png)
 
 ---
 

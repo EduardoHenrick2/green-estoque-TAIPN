@@ -2,11 +2,11 @@
 
 > Aqui devem ficar os arquivos-fonte do projeto: HTML, CSS, JavaScript, imagens e outros necessários para o funcionamento do sistema.
 
-[Código do front-end](../src/front) -- repositório do código do front-end
+[Código do front-end](./frontend) -- repositório do código do front-end
 
-[Código do back-end](../src/back)  -- repositório do código do back-end
+[Código do back-end](./backend)  -- repositório do código do back-end
 
-[Scripts SQL](../src/db)  -- repositório dos scripts SQL
+[Scripts SQL](./backend/database.sql)  -- script SQL do banco de dados (também gerenciado via Prisma)
 
 > **Links úteis**:
 > - [Instruções sobre acesso a APIs externas](https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template/blob/main/help/apis.md)

@@ -4,9 +4,11 @@
 
 `DISCIPLINA: Trabalho Interdisciplinar Aplicações para Processos de Negócios`
 
-`Xº semestre/ANO`
+`2º semestre/2026`
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+O objetivo do projeto Green Estoque é desenvolver uma aplicação web para auxiliar a empresa Green Volt no controle e gerenciamento de seu estoque de produtos e insumos fotovoltaicos. A solução busca substituir processos manuais, como anotações informais, planilhas e contagens físicas frequentes, por um sistema digital integrado a um banco de dados, permitindo o cadastro, consulta e atualização das informações de forma mais rápida, organizada, confiável e com menos burocracia.
+
+Com o sistema, espera-se reduzir retrabalho, minimizar erros humanos, facilitar a localização de produtos e melhorar o acompanhamento das movimentações de entrada e saída do estoque. Além disso, o Green Estoque contribui para a modernização dos processos internos da empresa, oferecendo maior segurança nas informações e apoio à tomada de decisão por parte dos colaboradores e gestores.
 
 ## Integrantes
 
