@@ -195,13 +195,11 @@ Os diagramas BPMN dos processos poderão ser elaborados em ferramentas como **Bi
 
 [PROCESSO 1 AS IS - Consulta manual de produtos](./processes/processo-1-as-is.md)
 
-[PROCESSO 1 TO BE - Consulta digital de produtos](./processes/processo-1-to-be.md)
 
 ### Processo 2 — Registro de entrada e saída de produtos
 
 [PROCESSO 2 AS IS - Registro manual de movimentações](./processes/processo-2-as-is.md)
 
-[PROCESSO 2 TO BE - Registro digital de movimentações](./processes/processo-2-to-be.md)
 
 ---
 

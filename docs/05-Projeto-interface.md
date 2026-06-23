@@ -78,7 +78,7 @@ Os wireframes representam a estrutura inicial das principais telas do sistema, c
 | Movimentações            | Listar entradas e saídas               |
 | Cadastro de movimentação | Registrar movimentações de estoque     |
 
-![Wireframe do Green Estoque](images/wireframe-green-estoque.png)
+![Wireframe do Green Estoque](images/wireframe.png)
 
 ---
 
@@ -156,7 +156,7 @@ Principais funcionalidades:
 * indicação do status do estoque;
 * acesso ao cadastro ou edição de produtos.
 
-![Tela de produtos](images/Produtos.png)
+![Tela de produtos](images/Produto.png)
 
 #### Tela de cadastro de produto
 
@@ -172,7 +172,7 @@ Campos principais:
 * estoque mínimo;
 * fornecedor.
 
-![Cadastro de produto](images/CadastroProduto.png)
+![Cadastro de produto](images/NovoProduto.png)
 
 ---
 
@@ -204,7 +204,7 @@ Campos principais:
 * data;
 * observação.
 
-![Cadastro de movimentação](images/CadastroMovimentação.png)
+![Cadastro de movimentação](images/CadastroMovimentações.png)
 
 ---
 

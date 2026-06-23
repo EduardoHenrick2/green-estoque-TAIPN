@@ -83,7 +83,7 @@ A aplicação deve evitar distorções, cortes ou alterações indevidas na logo
 
 A tela de exemplo escolhida para demonstrar o template padrão é o **Dashboard**, pois reúne os principais elementos visuais da aplicação: menu lateral, cards, indicadores, gráficos, alertas e atalhos de navegação.
 
-![Template padrão - Dashboard](images/template-dashboard.png)
+![Template padrão - Dashboard](images/template.png)
 
 O dashboard utiliza cards para apresentar informações gerais do estoque, como quantidade de produtos cadastrados, itens com estoque baixo e movimentações recentes. Os botões e destaques utilizam verde menta, enquanto o azul escuro reforça a identidade da Green Volt.
 

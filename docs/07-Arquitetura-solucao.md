@@ -133,7 +133,7 @@ As principais entidades do sistema são:
 | Produto possui Movimentações   | Um produto pode ter várias entradas e saídas         |
 | Usuário registra Movimentações | Um usuário pode registrar várias movimentações       |
 
-![Modelo Conceitual](images/modelo_conceitual.PNG)
+![Modelo Conceitual](images/Modelo conceitual.png)
 
 ---
 
@@ -149,7 +149,7 @@ O modelo relacional organiza os dados em tabelas com chaves primárias e estrang
 | produtos      | id, nome, codigo, quantidade, estoque_minimo, preco, categoria_id, fornecedor_id | Relaciona-se com categorias, fornecedores e movimentacoes |
 | movimentacoes | id, produto_id, usuario_id, tipo, quantidade, data, observacao                   | Relaciona-se com produtos e usuarios                      |
 
-![Modelo Relacional](images/modelo_relacional.PNG)
+![Modelo Relacional](images/BancoRelacional.png)
 
 ---
 
