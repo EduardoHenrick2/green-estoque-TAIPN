@@ -20,7 +20,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\testLogin.mp4)
+[Vídeo ou print do teste](images/testLogin.mp4)
 
 
 ---
@@ -37,7 +37,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\consulta.mp4)
+[Vídeo ou print do teste](images/consulta.mp4)
 
 ---
 
@@ -53,7 +53,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\Cadastro.mp4)
+[Vídeo ou print do teste](images/Cadastro.mp4)
 
 ---
 
@@ -69,7 +69,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\editar.mp4)
+[Vídeo ou print do teste](images/editar.mp4)
 
 ---
 
@@ -85,7 +85,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\entrada.mp4)
+[Vídeo ou print do teste](images/entrada.mp4)
 
 ---
 
@@ -101,7 +101,7 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\saida.mp4)
+[Vídeo ou print do teste](images/saida.mp4)
 
 ---
 
@@ -117,23 +117,10 @@ As evidências devem ser inseridas por meio de capturas de tela ou vídeos demon
 
 **Evidência:**
 
-[Vídeo ou print do teste](imagem\estoqueBaixo.png)
+[Vídeo ou print do teste](images/estoqueBaixo.mp4)
 
 ---
 
-## CT-008 — Verificar alerta de estoque baixo
-
-| Item                          | Descrição                                                                      |
-| ----------------------------- | ------------------------------------------------------------------------------ |
-| **Requisito associado**       | RF-017 — O sistema deve emitir alertas para produtos abaixo do estoque mínimo. |
-| **Resultado esperado**        | O sistema deve indicar que o produto está com estoque baixo.                   |
-| **Resultado obtido**          | Inserir resultado do teste.                                                    |
-| **Status**                    | Aprovado / Reprovado                                                           |
-| **Responsável pelo registro** | Nome do integrante da equipe                                                   |
-
-**Evidência:**
-
-[Vídeo ou print do teste](imagem\estoqueBaixo.png)
 
 ---
 

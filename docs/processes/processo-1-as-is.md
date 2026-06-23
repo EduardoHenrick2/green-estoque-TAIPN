@@ -15,7 +15,7 @@ O fluxo atual ocorre da seguinte forma: o colaborador recebe a solicitação de 
 * **Riscos:** Erro humano, retrabalho, divergência de dados e atraso no atendimento
 * **Resultado esperado:** Informar se o produto está disponível e em qual quantidade
  
-![Modelo BPMN do Processo 1](images\processo1.png)
+![Modelo BPMN do Processo 1](images/processo1.png)
 
 #### Detalhamento das atividades
 
